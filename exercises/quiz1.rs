@@ -12,12 +12,15 @@
 // quantity bought. No hints this time!
 //
 // No hints this time ;)
-
-// I AM NOT DONE
-
 // Put your function here!
 // fn calculate_price_of_apples {
-
+    fn calculate_price_of_apples(quantity: i32) -> i32 {
+        if quantity > 40 {
+            quantity // 每个苹果只要 1 rustbuck
+        } else {
+            quantity * 2 // 每个苹果需要 2 rustbucks
+        }
+    }
 // Don't modify this function!
 #[test]
 fn verify_test() {
